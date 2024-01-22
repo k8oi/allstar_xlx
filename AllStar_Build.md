@@ -1,3 +1,4 @@
+#Work in Progress! Last Update 2024-01-22
 ## AllStar Build
 ### Os Install
 1. Get AllStar image for Pi: [AllStarLink RPi Images](http://downloads.allstarlink.org/ASL_Images_Beta/Raspberry_Pi2_3_4/)
