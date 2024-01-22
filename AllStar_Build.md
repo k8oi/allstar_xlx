@@ -13,9 +13,10 @@ https://transceive.app/help/node-connections#hamvoip-1.7
 HamVoIP latest node software version 1.7 contains changes affecting IAX client applications such as Transceive. In order for Transceive to continue to connect to the node, the following configuration needs to be added:
 
 1. In the client configuration section of `/etc/asterisk/iax.conf`
-
-    [user_name]
-    requirecalltoken=no
+```
+[user_name]
+requirecalltoken=no
+```
 
 1. In `/etc/asterisk/rpt.conf`
 
