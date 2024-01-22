@@ -1,30 +1,19 @@
 ## AllStar Build
 ### Os Install
-1. Get AllStar image for Pi: [HamVoip RPi Images](https://hamvoip.org/#image)
+1. Get AllStar image for Pi: [AllStarLink RPi Images](http://downloads.allstarlink.org/ASL_Images_Beta/Raspberry_Pi2_3_4/)
 1. Burn image to SD Card and install in Pi
-1. ssh -p 222 root@x.x.x.x
-1. Userid: root Pass: root
-
-1. In `/etc/asterisk/iax.conf` in [general] section add:
+1. User: `repeater` Pass: `allstarlink`
+1. Update ASL GPG package key
 ```
-calltokenoptional=0.0.0.0/0.0.0.0
-requirecalltoken=no
+curl -s http://apt.allstarlink.org/repos/repo_signing.key 12 | sudo apt-key add -
+sudo apt update
 ```
-### HamVoIP 1.7
-https://transceive.app/help/node-connections#hamvoip-1.7
-HamVoIP latest node software version 1.7 contains changes affecting IAX client applications such as Transceive. In order for Transceive to continue to connect to the node, the following configuration needs to be added:
-
-1. In the client configuration section of `/etc/asterisk/iax.conf`
+### Install DVSwitch on existing Linux Install
+http://dvswitch.org/DVSwitch_install.pdf
 ```
-[user_name]
-requirecalltoken=no
+wget http://dvswitch.org/buster
+sudo chmod +x buster
+sudo ./buster
+sudo apt-get update
+sudo apt-get install dvswitch-server
 ```
-
-1. In `/etc/asterisk/rpt.conf`
-```
-propagate_dtmf=yes
-propagate_phonedtmf=yes
-remote_dtmf_allowed=1
-```
-
-1. Restart the node after you modify the configuration.
