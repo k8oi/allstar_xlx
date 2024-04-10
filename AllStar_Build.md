@@ -19,7 +19,7 @@ reboot
 
 ### Configure ASL with Private Server for XLX connection
 1. Edit `/etc/asterisk/rpt.conf`
-  - 
+  - https://github.com/k8oi/allstar_xlx/blob/0dbdc14b8a66b461f6c52be0c9e85487d6643300/ASL%20to%20DMR%20Bridge.pdf
 1. Paste the following block:
 ```
 [1999]
