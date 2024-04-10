@@ -19,7 +19,7 @@ reboot
 
 ### Configure ASL with Private Server for XLX connection
 1. Edit `/etc/asterisk/rpt.conf`
-  - https://s3-us-west-1.amazonaws.com/groupsioattachments/18573/21794260/3639/0?AWSAccessKeyId=AKIAJECNKOVMCCU3ATNQ&Expires=1705927633&Signature=RBGOlATvAOI82oG5sXeG7AjGVVI%3D&response-content-disposition=inline%3B+filename%3D%22ASL%2520to%2520DMR%2520Bridge.pdf%22
+  - 
 1. Paste the following block:
 ```
 [1999]
